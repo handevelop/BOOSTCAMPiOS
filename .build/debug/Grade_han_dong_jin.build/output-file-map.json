@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/home/dongjin/.build/debug/Grade_han_dong_jin.build/master.swiftdeps"
+  },
+  "/home/dongjin/Sources/main.swift": {
+    "dependencies": "/home/dongjin/.build/debug/Grade_han_dong_jin.build/main.d",
+    "object": "/home/dongjin/.build/debug/Grade_han_dong_jin.build/main.swift.o",
+    "swiftmodule": "/home/dongjin/.build/debug/Grade_han_dong_jin.build/main~partial.swiftmodule",
+    "swift-dependencies": "/home/dongjin/.build/debug/Grade_han_dong_jin.build/main.swiftdeps"
+  }
+}

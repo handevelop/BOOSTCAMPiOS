@@ -1,0 +1,31 @@
+client:
+  name: swift-build
+tools: {}
+targets:
+  "test": ["/home/dongjin/.build/debug/Grade_han_dong_jin.build/main.swift.o","/home/dongjin/.build/debug/Grade_han_dong_jin.swiftmodule","/home/dongjin/.build/debug/Grade_han_dong_jin"]
+  "main": ["/home/dongjin/.build/debug/Grade_han_dong_jin.build/main.swift.o","/home/dongjin/.build/debug/Grade_han_dong_jin.swiftmodule","/home/dongjin/.build/debug/Grade_han_dong_jin"]
+default: "main"
+commands: 
+  "<Grade_han_dong_jin.module>":
+    tool: swift-compiler
+    executable: "/opt/swift-3.1/usr/bin/swiftc"
+    module-name: "Grade_han_dong_jin"
+    module-output-path: "/home/dongjin/.build/debug/Grade_han_dong_jin.swiftmodule"
+    inputs: ["/home/dongjin/Sources/main.swift"]
+    outputs: ["/home/dongjin/.build/debug/Grade_han_dong_jin.build/main.swift.o","/home/dongjin/.build/debug/Grade_han_dong_jin.swiftmodule"]
+    import-paths: ["/home/dongjin/.build/debug"]
+    temps-path: "/home/dongjin/.build/debug/Grade_han_dong_jin.build"
+    objects: ["/home/dongjin/.build/debug/Grade_han_dong_jin.build/main.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-Onone","-g","-enable-testing","-module-cache-path","/home/dongjin/.build/debug/ModuleCache"]
+    sources: ["/home/dongjin/Sources/main.swift"]
+    is-library: false
+    enable-whole-module-optimization: false
+    num-threads: "8"
+
+  "<Grade_han_dong_jin.exe>":
+    tool: shell
+    description: "Linking ./.build/debug/Grade_han_dong_jin"
+    inputs: ["/home/dongjin/.build/debug/Grade_han_dong_jin.build/main.swift.o"]
+    outputs: ["/home/dongjin/.build/debug/Grade_han_dong_jin"]
+    args: ["/opt/swift-3.1/usr/bin/swiftc","-Xlinker","-rpath=$ORIGIN","-g","-L/home/dongjin/.build/debug","-o","/home/dongjin/.build/debug/Grade_han_dong_jin","-emit-executable","/home/dongjin/.build/debug/Grade_han_dong_jin.build/main.swift.o"]
+

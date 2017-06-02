@@ -1,0 +1,5 @@
+version: "Swift version 3.1 (swift-3.1-RELEASE)"
+options: "df36fafed7d8030e0795b8246b31986d"
+build_time: [549696307, 988696000]
+inputs:
+  "/home/dongjin/Sources/main.swift": [549695681, 0]
